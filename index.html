@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+	<link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Umbrella_Corporation_logo.svg/450px-Umbrella_Corporation_logo.svg.png">
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	
+	<header>
+		<h1>Curriculum Vitae</h1>
+	</header>
+
+	<div id="loading-screen">
+        <div class="pyramid-loader">
+            <div class="wrapper">
+                <div class="side side1"></div>
+                <div class="side side2"></div>
+                <div class="side side3"></div>
+                <div class="side side4"></div>
+                <div class="shadow"></div>
+            </div>
+        </div>
+    </div>
+	
+	<nav>
+        <ul>
+			<li><a href="file:///C:/Users/fauza/OneDrive/Dokumen/website%20yg%20benar%20yg%20ini%20woi/web%20smt%203/tugas%20cv%20web.html#contact"class="nav-link">Home</a></li>
+			<li><a href="file:///C:/Users/fauza/OneDrive/Dokumen/website%20yg%20benar%20yg%20ini%20woi/web%20smt%203/CV%20Deskripsi.html"class="nav-link">Description</a></li>
+			<li><a href="file:///C:/Users/fauza/OneDrive/Dokumen/website%20yg%20benar%20yg%20ini%20woi/web%20smt%203/CV%20Gallery.html"class="nav-link">Gallery</a></li>
+			<li><a href="file:///C:/Users/fauza/OneDrive/Dokumen/website%20yg%20benar%20yg%20ini%20woi/web%20smt%203/CV%20Kontak.html"class="nav-link">Contact</a></li>
+		</ul>
+    </nav>
+
+	<script>
+        // Menambahkan event listener untuk link navigasi
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(event) {
+                // Mencegah link langsung berpindah
+                event.preventDefault();
+                
+                // Tampilkan layar loading
+                document.getElementById('loading-screen').style.visibility = 'visible';
+                
+                // Beri waktu sebentar untuk menampilkan layar loading sebelum berpindah halaman
+                setTimeout(() => {
+                    window.location.href = this.href;
+                }, 800); // 500ms delay sebelum redirect (bisa disesuaikan)
+            });
+        });
+    </script>
+	
+	<div class="container">	
+		<div class="main-content">
+			<section>
+				<h1 style="text-align: center; margin-top: 20px;">Wisata di Daerah Saya</h1>
+    
+				<div class="gallery-container">
+					<div class="gallery-item">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Kelok_9_View.jpg/640px-Kelok_9_View.jpg" alt="Gallery Image 1">
+						<div class="overlay">Kelok Sembilan</div>
+					</div>
+        
+					<div class="gallery-item">
+						<img src="https://travel.siamsite.com/wp-content/uploads/2023/09/3853209321.webp" alt="Gallery Image 2">
+						<div class="overlay">Danau Kembar</div>
+					</div>
+					
+					<div class="gallery-item">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Lembah_harau_50_kota.jpg" alt="Gallery Image 3">
+						<div class="overlay">Lembah Harau</div>
+					</div>
+						
+					<div class="gallery-item">
+						<img src="https://www.djkn.kemenkeu.go.id/files/images/2023/09/WhatsApp_Image_2023-06-27_at_15_22_30.jpeg" alt="Gallery Image 4">
+						<div class="overlay">Kawasan Mandeh</div>
+					</div>
+
+					<div class="gallery-item">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Seribu_Rumah_Gadang.jpg" alt="Gallery Image 4">
+						<div class="overlay">Saribu Rumah Gadang</div>
+					</div>
+					
+					<div class="gallery-item">
+						<img src="https://westsumatra360.com/wp-content/uploads/2024/04/travelinindonesiaarchipelago.blogspot-3.jpg" alt="Gallery Image 4">
+						<div class="overlay">Ngarai Sianok</div>
+					</div>
+					
+					<div class="gallery-item">
+						<img src="https://cdn1-production-images-kly.akamaized.net/zF3EN0OqjoK4dclGZi3cSfiEnt4=/1200x900/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3506439/original/027577900_1625841399-Kabupaten_Kepulauan_Mentawai_1.JPG" alt="Gallery Image 4">
+						<div class="overlay">Mentawai</div>
+					</div>
+					
+					<div class="gallery-item">
+						<img src="https://kolomdesa.com/wp-content/uploads/2023/05/Kolam-Alami-di-Desa-Wisata-Nyarai-terbentuk-ratusan-tahun.jpg" alt="Gallery Image 4">
+						<div class="overlay">Nyarai</div>
+					</div>
+					<div class="gallery-item">
+						<img src="https://asset.kompas.com/crops/-o__--WLuEoOE55iHH6zVqZbxQE=/0x0:996x664/750x500/data/photo/2021/08/06/610cff0494252.jpg" alt="Gallery Image 4">
+						<div class="overlay">Istana Basa Pagaruyuang</div>
+					</div>
+
+					<div class="gallery-item">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Paragliding_Agam.jpg" alt="Gallery Image 4">
+						<div class="overlay">Puncak Lawang Maninjau</div>
+					</div>
+
+					<div class="gallery-item">
+						<img src="https://asset.kompas.com/crops/gxG7BrxV7Gf931pZvs5ham_dxKY=/0x0:1000x667/750x500/data/photo/2021/12/25/61c7232bdb54c.jpg" alt="Gallery Image 4">
+						<div class="overlay">Masjid Raya Sumatera Barat</div>
+					</div>
+
+					<div class="gallery-item">
+						<img src="https://rexnewsplus.com/wp-content/uploads/sites/16/2024/04/nagari-pariangan-2.jpg" alt="Gallery Image 4">
+						<div class="overlay">Desa Pariangan</div>
+					</div>
+                    
+				</div>	
+			</section>	
+		</div>	
+	</div>			
+	<footer>
+		<p> © 2024 Pujan Webpage. Copyright</p>
+	</footer>
+	
+</body>
+</html>
