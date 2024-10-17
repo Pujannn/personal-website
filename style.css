@@ -234,51 +234,50 @@ body {
         }
 		
 		.gallery-container {
-            max-width: auto;
-            width: auto;
-            padding: 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
+    width: 100%; /* Pastikan container menggunakan 100% lebar section */
+    max-width: 1200px; /* Bisa disesuaikan sesuai kebutuhan, atau dihilangkan */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Lebih kecil agar lebih responsif */
+    gap: 20px;
+    margin: 0 auto; /* Centering secara horizontal jika ada max-width */
+}
 
-        
-        .gallery-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 10px;
-			border-color: #008bf8;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            cursor: pointer;
-        }
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid #008bf8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
 
-        .gallery-item img {
-            width: 100%;
-            display: block;
-            transition: transform 0.5s ease;
-			object-fit: cover;
-			height: 250px;
-        }
+.gallery-item img {
+    width: 100%;
+    height: auto; /* Sesuaikan tinggi gambar dengan proporsi asli */
+    display: block;
+    transition: transform 0.5s ease;
+    object-fit: cover; /* Menjaga proporsi gambar */
+    max-height: 250px; /* Batasi tinggi maksimal agar gambar tidak terlalu besar */
+}
 
-        
-        .gallery-item:hover img {
-            transform: scale(1.1);
-        }
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
 
-        
-        .overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(0, 0, 0, 0.6);
-            color: white;
-            text-align: center;
-            padding: 10px;
-            opacity: 0;
-            transition: opacity 0.3s ease;		
-        }
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
 
-        .gallery-item:hover .overlay {
-            opacity: 1;
-        }
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
